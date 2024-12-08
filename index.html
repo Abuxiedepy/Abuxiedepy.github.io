@@ -5,6 +5,15 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>小学生博客</title>
 <style>
+    body {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+        margin: 0;
+        font-family: Arial, sans-serif;
+    }
     .button {
         display: inline-block;
         padding: 10px 20px;
@@ -19,6 +28,9 @@
     .bili-button {
         background-color: pink;
     }
+    .more-button {
+        background-color: grey;
+    }
 </style>
 </head>
 <body>
@@ -26,8 +38,15 @@
 <h1>Welcome</h1>
 <p>这是一个小学生的博客</p>
 
-<a href="https://www.alipan.com/t/FnQpq4vNBsBqw8fdZQPf/t/9eij0QC8tuL54zrbnhKT" class="button">PYos</a>
+<a href="https://pan.quark.cn/s/5cf51d95d7dd" class="button">PYos</a>
 <a href="https://space.bilibili.com/2070188180?spm_id_from=333.1007.0.0" class="button bili-button">bilibili</a>
+<a href="javascript:void(0);" class="button more-button" onclick="showMessage()">更多</a>
+
+<script>
+    function showMessage() {
+        alert("正在开发");
+    }
+</script>
 
 </body>
 </html>
